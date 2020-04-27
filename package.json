@@ -1,19 +1,26 @@
 {
-  "name": "slmf_project_newsletter",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/LuisOrtiz030/slmf_newsletter.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/LuisOrtiz030/slmf_newsletter/issues"
-  },
-  "homepage": "https://github.com/LuisOrtiz030/slmf_newsletter#readme"
+    "name": "slmf_project_newsletter",
+    "version": "1.0.0",
+    "description": "",
+    "main": "main.js",
+    "scripts": {
+        "start": "nodemon main.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/LuisOrtiz030/slmf_newsletter.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/LuisOrtiz030/slmf_newsletter/issues"
+    },
+    "homepage": "https://github.com/LuisOrtiz030/slmf_newsletter#readme",
+    "dependencies": {
+        "googleapis": "^39.2.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.3"
+    }
 }
