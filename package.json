@@ -1,26 +1,19 @@
 {
-    "name": "slmf_project_newsletter",
-    "version": "1.0.0",
-    "description": "",
-    "main": "main.js",
-    "scripts": {
-        "start": "nodemon main.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/LuisOrtiz030/slmf_newsletter.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/LuisOrtiz030/slmf_newsletter/issues"
-    },
-    "homepage": "https://github.com/LuisOrtiz030/slmf_newsletter#readme",
-    "dependencies": {
-        "googleapis": "^39.2.0"
-    },
-    "devDependencies": {
-        "nodemon": "^2.0.3"
-    }
+  "name": "slmf_project_newsletter",
+  "version": "1.0.0",
+  "description": "Newsletter conectados con el API de google sheets",
+  "author": "LuisMharius",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^2.0.0",
+    "bootstrap-vue": "^2.0.0",
+    "bootstrap": "^4.1.3"
+  },
+  "devDependencies": {}
 }

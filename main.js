@@ -1,23 +1,7 @@
 const { google } = require('googleapis');
 const keys = require('./keys.json');
 const infoSheet = require('./infoGS.json')
-
-
-windows.addEventListener('load', () => {
-
-    const vm = new Vue({
-        el: '#app',
-
-        data: {
-
-            mensaje: "Hola Vue"
-
-        }
-
-    })
-
-
-})
+const Vue = require('vue')
 
 
 
