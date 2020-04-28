@@ -3,6 +3,26 @@ const keys = require('./keys.json');
 const infoSheet = require('./infoGS.json')
 
 
+windows.addEventListener('load', () => {
+
+    const vm = new Vue({
+        el: '#app',
+
+        data: {
+
+            mensaje: "Hola Vue"
+
+        }
+
+    })
+
+
+})
+
+
+
+
+
 const client = new google.auth.JWT(
 
     keys.client_email,
