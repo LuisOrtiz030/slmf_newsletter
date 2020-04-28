@@ -1,5 +1,6 @@
 const { google } = require('googleapis');
 const keys = require('./keys.json');
+const infoSheet = require('./infoGS.json')
 
 
 const client = new google.auth.JWT(
@@ -10,29 +11,29 @@ const client = new google.auth.JWT(
 
 );
 
-client.authorize(function(err, tokens) {
+client.authorize(async function(err, tokens) {
     if (err) {
         console.log(err);
         return;
     } else {
         console.log(`${"¡Conectado!"}`)
-        gsrun(client)
+        await gsrun(client, "A1")
     }
 });
 
 
-async function gsrun(cl) {
+
+async function gsrun(cl, celda) {
 
     const gsapi = google.sheets({ version: 'v4', auth: cl })
     const opt = {
 
-        spreadsheetId: '1xZS_INQh1dKZM8q7Lje5zSj8CA3rPdskAL9vZla9g08',
-        range: '1_newsletters!A1:B2'
+        spreadsheetId: infoSheet.ssId,
+        range: `${infoSheet.nameSheet}${celda}`
 
     };
 
-
     let data = await gsapi.spreadsheets.values.get(opt)
 
-    console.table(data.data.values);
+    console.log(data.data.values);
 }

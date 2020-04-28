@@ -1,1 +1,10 @@
+
+#Llaves para conectarse al API de google sheet
+#Se descarga directamente del proyecto en console developers google:
 keys.json 
+
+#Modulos para conectarse al API y el modulo de nodemon:
+node_modules
+
+#Información del documento de Google Sheet a conectarnos para el contenido:
+infoGS.json
