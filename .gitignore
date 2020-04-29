@@ -88,3 +88,10 @@ sw.*
 
 # Vim swap files
 *.swp
+
+# Google Sheet API 
+keys.json
+
+# Información documento de google Sheet
+
+infoGS.json
